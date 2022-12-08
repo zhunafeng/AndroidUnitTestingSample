@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.ut">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".zhu.MyApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".zhu.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:label="@string/login"
+            android:name=".zhu.ui.LoginActivity"/>
+
+        <activity
+            android:label="@string/login"
+            android:name=".zhu.mvp.ui.LoginMVPActivity"/>
+
+        <activity
+            android:label="@string/login"
+            android:name=".zhu.dagger.ui.LoginDaggerActivity"/>
+
+        <receiver
+            android:name=".zhu.broadcast.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.zl.weilu.androidut" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:exported="false"
+            android:name=".zhu.service.MyService"/>
+        
+    </application>
+
+</manifest>

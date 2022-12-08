@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidUnitTest</string>
+
+    <string name="login">Login</string>
+    <string name="login_mobile">Phone</string>
+    <string name="login_mobile_hint">type your phone here</string>
+    <string name="login_identify">code</string>
+    <string name="login_identify_hint">type your code here</string>
+    <string name="login_mobile_login">phone login</string>
+    <string name="login_send_identify">send code</string>
+
+    <string name="color_1">yellow</string>
+</resources>
